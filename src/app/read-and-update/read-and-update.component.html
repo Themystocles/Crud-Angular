@@ -1,0 +1,12 @@
+<div *ngIf="CursoSelected">
+    <h3>Detalhes Curso</h3>
+
+    <p>Nome Do curso: {{CursoSelected.name}}</p>
+    <p>Valor Do curso: {{CursoSelected.value}}</p>
+
+    <input [(ngModel)]="CursoSelected.name">
+    <input [(ngModel)]="CursoSelected.value">
+
+
+
+</div>

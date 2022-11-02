@@ -14,7 +14,11 @@ export class CrudComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  Lista: Cursos[] = []
+  selectedLista?: Cursos
   Cursos = CURSOS
 
+  CursoSelect(Curso: Cursos): void {
+    this.selectedLista = Curso
+
+  }
 }

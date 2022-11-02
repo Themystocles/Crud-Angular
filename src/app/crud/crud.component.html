@@ -2,5 +2,10 @@
 <H3>CRUD</H3>
 
 <ul>
-    <li></li>
+    <li *ngFor="let cursos of Cursos" (click)="CursoSelect(cursos)">
+        {{cursos.name}}
+    </li>
+
 </ul>
+
+<app-read-and-update [CursoSelected]="selectedLista"></app-read-and-update>
