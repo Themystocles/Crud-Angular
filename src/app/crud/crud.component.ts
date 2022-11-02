@@ -17,8 +17,13 @@ export class CrudComponent implements OnInit {
   selectedLista?: Cursos
   Cursos = CURSOS
 
+
+
+
   CursoSelect(Curso: Cursos): void {
     this.selectedLista = Curso
 
   }
+
+
 }

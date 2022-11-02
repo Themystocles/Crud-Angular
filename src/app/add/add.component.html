@@ -1,0 +1,6 @@
+<button (click)="Adcshow()">Adicionar</button>
+<div *ngIf="show">
+    <input type="text" [(ngModel)]="name">
+    <input type="number" [(ngModel)]="value">
+    <div *ngIf="name && value" value><button (click)="Adcionar(name,value)"> Adcionar Curso </button></div>
+</div>
