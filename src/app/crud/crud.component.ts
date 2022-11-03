@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DeleteService } from '../delete.service';
 import { CURSOS } from './ListaCursos';
 import { Cursos } from './listaInterface';
 
@@ -9,7 +10,7 @@ import { Cursos } from './listaInterface';
 })
 export class CrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private deleteservice: DeleteService) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +24,10 @@ export class CrudComponent implements OnInit {
   CursoSelect(Curso: Cursos): void {
     this.selectedLista = Curso
 
+  }
+  deleteCurso(cursos: Cursos) {
+    alert("Curso deletado")
+    this.Cursos = this.deleteservice.remove(this.Cursos, cursos)
   }
 
 

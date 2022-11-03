@@ -6,6 +6,12 @@ import { AppComponent } from './app.component';
 import { CrudComponent } from './crud/crud.component';
 import { ReadAndUpdateComponent } from './read-and-update/read-and-update.component';
 import { AddComponent } from './add/add.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatListModule } from '@angular/material/list';
+
+
+
 
 
 @NgModule({
@@ -13,12 +19,16 @@ import { AddComponent } from './add/add.component';
     AppComponent,
     CrudComponent,
     ReadAndUpdateComponent,
-    AddComponent
+    AddComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

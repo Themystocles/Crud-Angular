@@ -1,9 +1,12 @@
 <H3>Create, Read, Update, Delete</H3>
 <H3>CRUD</H3>
 
+
+
 <ul>
     <li *ngFor="let cursos of Cursos" (click)="CursoSelect(cursos)">
         {{cursos.name}}
+        <button (click)="deleteCurso(cursos)">Delete</button>
     </li>
 
 </ul>
